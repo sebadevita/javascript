@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="perfil.css">
+    <title>Perfil</title>
+</head>
+<body>
+
+    <section class="main-container">
+
+        <div class="card">
+                <img id="photo" src="./img/photo.jpg" alt="">
+            <div class="personalData-container">
+
+                <h2 class="name">Sebastián De Vita</h2>
+                <p class="username">@sebadevita</p>
+            </div>
+            <button class="button">Meet Sebastián</button>
+
+        </div>
+        
+    </section>
+
+    <script>
+        const photoById = document.getElementById("photo")
+        const nameByClassName = document.getElementsByClassName("name")
+        const pByTag = document.getElementsByTagName("p")
+        
+        console.log(photoById);
+        console.log(nameByClassName);
+        console.log(pByTag);
+    </script>
+    
+</body>
+</html>
