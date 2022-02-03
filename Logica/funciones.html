@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+
+    <script>
+
+
+        function suma (n1, n2){
+            return n1 + n2
+        }
+
+        function esPar(n){
+            if (n%2 === 0){
+                console.log("Es par")
+            } else {
+                console.log("Es impar");
+            }
+        }
+        
+        function esMultiploDe3O5(n){
+            if (n%3 === 0 || n%5 === 0){
+                console.log("Es múltiplo")
+            } else {
+                console.log("No es múltiplo");
+            }
+        }
+
+        function cantidadDeDiasMes(mes){
+            if (
+            mes.toLowerCase() === "enero" || 
+            mes.toLowerCase() === "marzo" || 
+            mes.toLowerCase() === "mayo" ||
+            mes.toLowerCase() === "julio" ||
+            mes.toLowerCase() === "agosto" ||
+            mes.toLowerCase() === "octubre" ||
+            mes.toLowerCase() === "diciembre" ){
+                
+                console.log("Tiene 31 dias");
+            } else if (mes.toLowerCase() === "febrero"){
+                console.log("Tiene 28 dias");
+            } else {
+                console.log("Tiene 30 dias");
+            }
+        }
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
