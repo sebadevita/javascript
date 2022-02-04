@@ -30,6 +30,7 @@
 
     <script>
         
+        let elementIndex = 0
 
         function addContact(){
 
@@ -46,11 +47,15 @@
         function addContactWithKey(event){
             const contactValue = document.getElementById("contact").value
         
-        console.log(event);
-        if(event.key == "+" || event.key == "Enter"){
-            event.preventDefault()
-            addElementToDOM('li', contactValue, 'list' )
-        }
+            if(event.key == "+" || event.key == "Enter"){
+                event.preventDefault()
+                addElementToDOM('li', contactValue, 'list' )
+            }
+       }
+
+       function removeContact(contact){
+           const contactSelected = document.getElementById(contact)
+           contactSelected.remove()
        }
 
         function addElementToDOM(type, content, parentId){
@@ -58,8 +63,13 @@
             const element = document.createElement(type)
             const text = document.createTextNode(content)
 
+            element.setAttribute("id", `index-${elementIndex}`)
+            element.setAttribute("onclick", "removeContact(this.id)")
             element.appendChild(text)
             parent.appendChild(element)
+
+            element.appendChild(text);
+            parent.appendChild(element);
         }
 
         
