@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contacts.css">
+    <title>Contacts</title>
+</head>
+<body>
+
+    <div class="formContainer">
+        <input 
+            id="contact" 
+            type="text" 
+            placeholder="type a contact..."
+            onkeypress="addContactWithKey(event)"
+            >
+            
+        <button 
+            class="button" 
+            onclick="addContact()"   
+            >
+            Add contact
+        </button>
+
+        <ul id="list">
+        </ul>
+    </div>
+
+    <script>
+        
+
+        function addContact(){
+
+            const contactValue = document.getElementById("contact").value
+            console.log(contactValue);
+
+            addElementToDOM('li', contactValue, 'list')
+
+            document.getElementById("contact").value = ""
+
+
+        }
+
+        function addContactWithKey(event){
+            const contactValue = document.getElementById("contact").value
+        
+        console.log(event);
+        if(event.key == "+" || event.key == "Enter"){
+            event.preventDefault()
+            addElementToDOM('li', contactValue, 'list' )
+        }
+       }
+
+        function addElementToDOM(type, content, parentId){
+            const parent = document.getElementById(parentId)
+            const element = document.createElement(type)
+            const text = document.createTextNode(content)
+
+            element.appendChild(text)
+            parent.appendChild(element)
+        }
+
+        
+
+
+
+    </script>
+    
+</body>
+</html>
