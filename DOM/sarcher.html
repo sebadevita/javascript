@@ -14,20 +14,40 @@
             id="usernameInput" 
             type="text" 
             placeholder="type username..."
-            onchange="handleChange()">
-        <button class="button" onclick="showUser()">Search user</button>
+            onchange="handleChange()"
+            onkeyup="handleKeyUp(event)"
+            >
+            
+        <button 
+            class="button" 
+            onclick="showData()"   
+            >
+            Search user
+        </button>
+        <p id="text"></p>
     </div>
 
     <script>
 
-       function showUser(){
-        const username = document.getElementById("usernameInput").value
-        console.log(username)
+       function showData(){
+        const username = document.getElementById("usernameInput")
+        console.log(username.value)
+        
+        const text = document.getElementById("text")
+        text.innerHTML = username.value
        }
 
        function handleChange(){
         const username = document.getElementById("usernameInput").value
         console.log(username)
+       }
+
+       function handleKeyUp(event){
+        console.log(event.target.value)
+        
+        const value = event.target.value
+        const text = document.getElementById("text")
+        text.innerHTML = value
        }
           
     </script>
