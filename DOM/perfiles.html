@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profiles.css">
+    <title>Perfil</title>
+</head>
+<body>
+
+    <section class="main-container">
+
+        <div class="card">
+                <div class="photoContainer">
+                    <hr class="line">
+                    <img class="photo" src="./img/photo.jpg" alt="">
+                    <hr class="line">
+                </div>
+           
+                <div class="personalData-container">
+
+                    <p class="name">Sebastián De Vita</p>
+                    <p class="username">@sebadevita</p>
+            
+                </div>
+            <button class="button">Meet Sebastián</button>
+
+        </div>
+
+        <div class="card">
+            <div class="photoContainer">
+                <hr class="line">
+                <img class="photo" src="./img/photo.jpg" alt="">
+                <hr class="line">
+            </div>
+       
+            <div class="personalData-container">
+
+                <p class="name">Sebastián De Vita</p>
+                <p class="username">@sebadevita</p>
+        
+            </div>
+        <button class="button">Meet Sebastián</button>
+
+    </div>
+
+    <div class="card">
+        <div class="photoContainer">
+            <hr class="line">
+            <img class="photo" src="./img/photo.jpg" alt="">
+            <hr class="line">
+        </div>
+   
+        <div class="personalData-container">
+
+            <p class="name">Sebastián De Vita</p>
+            <p class="username">@sebadevita</p>
+    
+        </div>
+    <button class="button">Meet Sebastián</button>
+
+</div>
+        
+    </section>
+    
+    <script>
+        
+        const buttons = document.getElementsByTagName("button")
+
+        function lastButton () {
+            return buttons.length - 1
+            
+        }
+        buttons[lastButton()].classList.add("button-secondary")
+
+    </script>
+    
+</body>
+</html>

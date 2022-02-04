@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: "nunito";
+  background-color: #f3f5f7;
+}
+
+.main-container {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card {
+  background-color: white;
+  width: 250px;
+  height: 300px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-top: 20px;
+  border: 1 px solid black;
+}
+
+.photoContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.personalData-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  width: 250px;
+  height: 300px;
+  border: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #0096fc;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "nunito";
+}
+
+.button-secondary {
+  width: 250px;
+  height: 300px;
+  border: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #fc008f;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "nunito";
+}
+
+.line {
+  height: 0.5px;
+  width: 30px;
+  border: 0.5px solid #e8e8e8;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0px;
+}
+
+.username {
+  color: #afafaf;
+  font-size: 15px;
+  font-style: italic;
+}
