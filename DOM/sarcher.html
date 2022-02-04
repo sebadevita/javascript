@@ -10,13 +10,22 @@
 <body>
 
     <div class="formContainer">
-        <input id="usernameInput" type="text" placeholder="type username...">
+        <input 
+            id="usernameInput" 
+            type="text" 
+            placeholder="type username..."
+            onchange="handleChange()">
         <button class="button" onclick="showUser()">Search user</button>
     </div>
 
     <script>
 
        function showUser(){
+        const username = document.getElementById("usernameInput").value
+        console.log(username)
+       }
+
+       function handleChange(){
         const username = document.getElementById("usernameInput").value
         console.log(username)
        }
