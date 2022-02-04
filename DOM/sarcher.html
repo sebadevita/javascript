@@ -8,6 +8,20 @@
     <title>Searcher</title>
 </head>
 <body>
+
+    <div class="formContainer">
+        <input id="usernameInput" type="text" placeholder="type username...">
+        <button class="button" onclick="showUser()">Search user</button>
+    </div>
+
+    <script>
+
+       function showUser(){
+        const username = document.getElementById("usernameInput").value
+        console.log(username)
+       }
+          
+    </script>
     
 </body>
 </html>
