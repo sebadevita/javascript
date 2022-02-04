@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "nunito";
   background-color: #f3f5f7;
 }
 
@@ -22,10 +22,18 @@ body {
   padding-top: 20px;
 }
 
+.photoContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
 #photo {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
+  margin: 10px;
 }
 
 .personalData-container {
@@ -44,4 +52,23 @@ body {
   color: white;
   font-size: 25px;
   font-weight: bold;
+  font-family: "nunito";
+}
+
+.line {
+  height: 0.5px;
+  width: 125px;
+  border: 0.5px solid #e8e8e8;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 30px;
+  margin: 0px;
+}
+
+.username {
+  color: #afafaf;
+  font-size: 20px;
+  font-style: italic;
 }
