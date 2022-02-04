@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pokedex.css">
+    <title>Pokedex</title>
+</head>
+<body>
+
+    <div class="card">
+        <input type="text" name="" id="pokemonInput" placeholder="nro pokedex...">
+        <button class="button" onclick="searchPokemon()">Buscar pokemon</button>
+
+        <img src="''" alt="" id="image">
+        <span id="name"></span>
+    </div>
+
+    <script>
+        
+
+     
+        async function searchPokemon(){
+            
+            pokemonId = document.getElementById("pokemonInput").value
+
+            const data = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonId}`)
+            const pokemon = await data.json()
+
+            document.getElementById('name').innerText = pokemon.name
+            document.getElementById('image').src = pokemon.sprites.front_default
+            
+
+        }
+
+    </script>
+    
+</body>
+</html>

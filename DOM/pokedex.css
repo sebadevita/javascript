@@ -1,0 +1,44 @@
+.body {
+  margin: 0px;
+  background-color: #f3f5f7;
+}
+
+.card {
+  background-color: rgb(236, 97, 97);
+  width: 400px;
+  height: 350px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+#pokemonInput {
+  margin: 10px;
+  width: 150px;
+  height: 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.button {
+  width: 300px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  border: 2px solid rgb(243, 243, 157);
+  background-color: rgb(246, 196, 198);
+}
+
+#image {
+  width: 50%;
+  background-color: rgb(246, 196, 198);
+  border-radius: 100px;
+  margin: 20px;
+}
+
+#name {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 30px;
+}
